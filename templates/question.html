@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Question {{ q_number }}{% endblock %}
+{% block content %}
+<div class="quiz-card">
+    <p class="progress">Sawal {{ q_number }} / {{ total }}</p>
+    <h3>{{ question }}</h3>
+    <form method="POST">
+        {% for option in options %}
+        <label class="option-label">
+            <input type="radio" name="option" value="{{ option }}" required>
+            {{ option }}
+        </label>
+        {% endfor %}
+        <button type="submit" class="next-btn">Next</button>
+    </form>
+</div>
+{% endblock %}
