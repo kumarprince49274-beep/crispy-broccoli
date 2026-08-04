@@ -1,0 +1,15 @@
+my-project/
+│
+├── app.py
+├── requirements.txt
+├── Procfile
+├── .gitignore
+├── README.md
+│
+├── templates/
+│   ├── login.html
+│   ├── register.html
+│   └── dashboard.html
+│
+└── static/
+    └── style.css
