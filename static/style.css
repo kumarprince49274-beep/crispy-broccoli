@@ -1,0 +1,54 @@
+* { box-sizing: border-box; }
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #f4f5fb;
+    margin: 0;
+    color: #222;
+}
+.navbar {
+    background: #6c5ce7;
+    color: white;
+    padding: 14px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo { font-weight: bold; font-size: 18px; }
+.nav-links a { color: white; margin-left: 16px; text-decoration: none; font-size: 14px; }
+.container { max-width: 600px; margin: 24px auto; padding: 0 16px; }
+
+.auth-card, .home-card, .quiz-card, .result-card {
+    background: white;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    max-width: 400px;
+    margin: 60px auto;
+    text-align: center;
+}
+.auth-card input {
+    width: 100%; padding: 10px; margin: 8px 0; border-radius: 6px; border: 1px solid #ddd;
+}
+.auth-card button, .start-btn, .next-btn {
+    display: inline-block;
+    width: 100%; padding: 10px; background: #6c5ce7; color: white; border: none;
+    border-radius: 6px; cursor: pointer; font-weight: bold; margin-top: 10px;
+    text-decoration: none; text-align: center;
+}
+.error { color: #d63031; font-size: 14px; }
+
+.quiz-card { text-align: left; }
+.progress { color: #888; font-size: 13px; }
+.option-label {
+    display: block; padding: 10px; margin: 8px 0; background: #f4f5fb;
+    border-radius: 6px; cursor: pointer;
+}
+.option-label input { margin-right: 8px; }
+
+.score-text { font-size: 20px; font-weight: bold; color: #00b894; }
+
+.leaderboard-table {
+    width: 100%; background: white; border-collapse: collapse; border-radius: 10px; overflow: hidden;
+}
+.leaderboard-table th, .leaderboard-table td { padding: 10px 14px; text-align: left; border-bottom: 1px solid #eee; }
+.leaderboard-table th { background: #6c5ce7; color: white; }
