@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Result{% endblock %}
+{% block content %}
+<div class="result-card">
+    <h2>Quiz Khatam!</h2>
+    <p class="score-text">Aapka Score: <strong>{{ score }} / {{ total }}</strong></p>
+    <a href="{{ url_for('quiz') }}" class="start-btn">Dobara Khelein</a>
+    <a href="{{ url_for('leaderboard') }}" class="start-btn">Leaderboard Dekhein</a>
+</div>
+{% endblock %}
