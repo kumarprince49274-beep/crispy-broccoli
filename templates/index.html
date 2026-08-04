@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<div class="home-card">
+    <h2>Namaste, {{ username }}!</h2>
+    <p>Is quiz mein {{ total_questions }} sawal hain. Ready ho jaayein!</p>
+    <a href="{{ url_for('quiz') }}" class="start-btn">Quiz Shuru Karein</a>
+</div>
+{% endblock %}
