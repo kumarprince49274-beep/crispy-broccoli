@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Leaderboard{% endblock %}
+{% block content %}
+<h2>Leaderboard</h2>
+<table class="leaderboard-table">
+    <tr><th>#</th><th>Username</th><th>Best Score</th></tr>
+    {% for u in top_users %}
+    <tr>
+        <td>{{ loop.index }}</td>
+        <td>{{ u.username }}</td>
+        <td>{{ u.best_score }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<a href="{{ url_for('index') }}">Home par jaayein</a>
+{% endblock %}
